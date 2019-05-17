@@ -13,7 +13,7 @@
 
     <Grid>
         <Rectangle RadiusY="8" RadiusX="8" Fill="White"/>
-        <Image Source="D:\учеба\4 sem\Student_Assist\Resources\welcome.jpeg" Margin="310,0,0,0" Stretch="UniformToFill"/>
+        <Image Source="D:\\Student_Assist\Resources\welcome.jpeg" Margin="310,0,0,0" Stretch="UniformToFill"/>
         <Rectangle Margin="310,0,0,0">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

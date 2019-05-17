@@ -39,3 +39,33 @@ D:\учеба\4 sem\Student_Assist\obj\Debug\View\MainMenu.baml
 D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.csprojAssemblyReference.cache
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\UserControl1.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\UserControl1.baml
+D:\Student_Assist\obj\Debug\Student_Assist.csprojAssemblyReference.cache
+D:\Student_Assist\obj\Debug\App.g.cs
+D:\Student_Assist\obj\Debug\Student_Assist_MarkupCompile.cache
+D:\Student_Assist\obj\Debug\Student_Assist_MarkupCompile.lref
+D:\Student_Assist\obj\Debug\Student_Assist.pdb
+D:\Student_Assist\obj\Debug\View\Enter_Regist.g.cs
+D:\Student_Assist\obj\Debug\View\MainMenu.g.cs
+D:\Student_Assist\bin\Debug\Student_Assist.exe.config
+D:\Student_Assist\bin\Debug\Student_Assist.exe
+D:\Student_Assist\bin\Debug\Student_Assist.pdb
+D:\Student_Assist\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+D:\Student_Assist\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Student_Assist\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Student_Assist\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Student_Assist\obj\Debug\View\MainWindow.g.cs
+D:\Student_Assist\obj\Debug\View\UserControl1.g.cs
+D:\Student_Assist\obj\Debug\App.baml
+D:\Student_Assist\obj\Debug\Resources\Styles.baml
+D:\Student_Assist\obj\Debug\View\Enter_Regist.baml
+D:\Student_Assist\obj\Debug\View\MainMenu.baml
+D:\Student_Assist\obj\Debug\View\MainWindow.baml
+D:\Student_Assist\obj\Debug\View\UserControl1.baml
+D:\Student_Assist\obj\Debug\Student_Assist.g.resources
+D:\Student_Assist\obj\Debug\Student_Assist.Properties.Resources.resources
+D:\Student_Assist\obj\Debug\Student_Assist.csproj.GenerateResource.cache
+D:\Student_Assist\obj\Debug\Student_Assist.csproj.CoreCompileInputs.cache
+D:\Student_Assist\obj\Debug\Student_Assist.csproj.CopyComplete
+D:\Student_Assist\obj\Debug\Student_Assist.exe
+D:\Student_Assist\bin\Debug\MaterialDesignColors.dll
+D:\Student_Assist\bin\Debug\MaterialDesignColors.pdb

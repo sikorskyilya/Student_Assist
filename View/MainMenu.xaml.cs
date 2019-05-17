@@ -24,9 +24,38 @@ namespace Student_Assist.View
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Notes_open(object sender, RoutedEventArgs e)
         {
             lol.Children.Add(new UserControl1());
+        }
+        private void Progress_open(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Timetable_open(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Help_open(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void logout(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Left_Mouse(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
+        private void Quit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        private void Minimize(object sender, RoutedEventArgs e)
+        {
+            SystemCommands.MinimizeWindow(this);
         }
     }
 }

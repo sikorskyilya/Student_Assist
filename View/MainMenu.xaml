@@ -7,39 +7,37 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:MetroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
         mc:Ignorable="d"
-        Title="MainMenu" Height="640" Width="1200">
+        Title="MainMenu" Height="640" Width="1200" MouseLeftButtonDown="Left_Mouse" WindowStyle="None">
     <Grid>
         <Grid  HorizontalAlignment="Left" Width="56" Margin="0,46,0,0">
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#FFACACAC"/>
             </Grid.Effect>
             <StackPanel Background="#FF31577E" Margin="0,0,0,0">
-                <Button Click="Button_Click" Style="{StaticResource ButtonOpacity_0}" Foreground="White" Width="46" Height="46">
+                <Button ToolTip="NoteBook" Click="Notes_open" Style="{StaticResource ButtonOpacity_0}" Foreground="White" Width="46" Height="46">
                     <Button.Background>
                         <SolidColorBrush Color="Azure" Opacity="0" />
                     </Button.Background>
                     <materialDesign:PackIcon Kind="Notebook" Height="33" Width="36" />
                 </Button>
-                <Button Style="{StaticResource ButtonOpacity_0}" Foreground="White" Width="46" Height="46">
+                <Button ToolTip="Progress" Click="Progress_open" Style="{StaticResource ButtonOpacity_0}" Foreground="White" Width="46" Height="46">
                     <Button.Background>
                         <SolidColorBrush Color="Azure" Opacity="0" />
                     </Button.Background>
                     <materialDesign:PackIcon Kind="ProgressTick" Height="33" Width="36" />
                 </Button>
-                <Button Style="{StaticResource ButtonOpacity_0}" Foreground="White" Width="46" Height="46">
+                <Button ToolTip= "Timetable" Click="Timetable_open" Style="{StaticResource ButtonOpacity_0}" Foreground="White" Width="46" Height="46">
                     <Button.Background>
                         <SolidColorBrush Color="Azure" Opacity="0" />
                     </Button.Background>
                     <materialDesign:PackIcon Kind="TableLarge" Height="33" Width="36" />
                 </Button>
-                <Button Style="{StaticResource ButtonOpacity_0}" Foreground="White" Width="46" Height="46">
+                <Button Click="Quit" ToolTip="Quit" Style="{StaticResource ButtonOpacity_0}" Foreground="White" Width="46" Height="46">
                     <Button.Background>
                         <SolidColorBrush Color="Azure" Opacity="0" />
                     </Button.Background>
                     <materialDesign:PackIcon Kind="CloseBoxOutline" Height="33" Width="36" />
                 </Button>
-                
-                
             </StackPanel>
         </Grid>
 
@@ -47,7 +45,7 @@
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#FFACACAC"/>
             </Grid.Effect>
-            <Button Margin="6,0,0,0" Style="{StaticResource ButtonOpacity_0}"  Width="46" Height="46" HorizontalAlignment="Left">
+            <Button ToolTip="Account" Margin="6,0,0,0" Style="{StaticResource ButtonOpacity_0}"  Width="46" Height="46" HorizontalAlignment="Left">
                 <Button.Background>
                     <SolidColorBrush Color="Azure" Opacity="0" />
                 </Button.Background>
@@ -58,11 +56,11 @@
                 <materialDesign:PopupBox Foreground="White" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" Margin="10">
                     
                     <StackPanel Width="150">
-                        <Button Content="Quit"/>
-                        <Button Content="Minimize"/>
-                        <Button Content="Help"/>
+                        <Button Content="Quit" Click="Quit"/>
+                        <Button Content="Minimize" Click="Minimize"/>
+                        <Button Content="Help" Click="Help_open"/>
                         <Separator/>
-                        <Button Content="Logout"/>
+                        <Button Content="Logout" Click="logout"/>
                     </StackPanel>
                 </materialDesign:PopupBox>
             </StackPanel>
