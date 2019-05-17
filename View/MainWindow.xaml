@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Student_Assist"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
+         xmlns:MetroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="946.4" Width="790.4">
     <Grid>
+        <MetroChart:RadialGaugeChart Background="{x:Null}" ChartTitle="Consumo" ChartSubTitle="" Foreground="LightGray" RenderTransformOrigin="0.5,0.5" Margin="0,0,192.6,202.4">
+            <MetroChart:RadialGaugeChart.Series>
+                <MetroChart:ChartSeries
+                                        DisplayMember="Titulo"
+                                        ItemsSource="{Binding Path=Consumo}"
+                                        SeriesTitle="Consumo"
+                                        ValueMember="Porcentagem" HorizontalAlignment="Center"/>
+            </MetroChart:RadialGaugeChart.Series>
+        </MetroChart:RadialGaugeChart>
     </Grid>
-   
 </Window>

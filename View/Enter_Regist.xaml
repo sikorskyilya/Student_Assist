@@ -53,6 +53,7 @@
             </Grid>
             <StackPanel Orientation="Horizontal">
                 <Button Name="BLogin" HorizontalAlignment="Center" Content="LOGIN" FontFamily="Impact" FontSize="18" Height="32" Width="100" Background="#FF307CD6" BorderBrush="#FF307CD6" Margin="0,0,0,0"/>
+                <TextBlock Visibility="Collapsed" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#707070"><Run Text="Такой аккаунт существует " Foreground="#FFC81313"/></TextBlock>
                 <Button Name="BRegist"  HorizontalAlignment="Center" Content="Registration" FontFamily="Impact" FontSize="18" Height="32" Width="132" Background="#FF307CD6" BorderBrush="#FF307CD6" Margin="150,0,0,0" Visibility="Collapsed"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10,20">

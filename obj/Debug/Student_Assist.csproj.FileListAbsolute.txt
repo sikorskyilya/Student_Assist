@@ -1,4 +1,3 @@
-D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.csprojAssemblyReference.cache
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Enter_Regist.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\MainWindow.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\App.g.cs
@@ -33,3 +32,10 @@ D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.csproj.CoreCompileIn
 D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.csproj.CopyComplete
 D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.exe
 D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.pdb
+D:\учеба\4 sem\Student_Assist\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+D:\учеба\4 sem\Student_Assist\bin\Debug\MaterialDesignColors.pdb
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\MainMenu.g.cs
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\MainMenu.baml
+D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.csprojAssemblyReference.cache
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\UserControl1.g.cs
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\UserControl1.baml
