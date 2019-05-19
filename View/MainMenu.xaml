@@ -7,7 +7,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:MetroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
         mc:Ignorable="d"
-        Title="MainMenu" Height="640" Width="1200" MouseLeftButtonDown="Left_Mouse" WindowStyle="None">
+        Title="MainMenu"  ResizeMode="NoResize" Height="640" Width="1200" MouseLeftButtonDown="Left_Mouse" WindowStyle="None">
     <Grid>
         <Grid  HorizontalAlignment="Left" Width="56" Margin="0,46,0,0">
             <Grid.Effect>

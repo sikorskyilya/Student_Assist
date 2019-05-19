@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Student_Assist\obj\Debug\
+D:\учеба\4 sem\Student_Assist\obj\Debug\
 Student_Assist
 none
 false
 DEBUG;TRACE
-D:\Student_Assist\App.xaml
-51062253150
+D:\учеба\4 sem\Student_Assist\App.xaml
+62059731641
 
-1222940408
-18391920140
-Resources\Styles.xaml;View\Enter_Regist.xaml;View\MainMenu.xaml;View\MainWindow.xaml;View\UserControl1.xaml;
+15-772206361
+241748038207
+Resources\Styles.xaml;View\Enter_Regist.xaml;View\MainMenu.xaml;View\MainWindow.xaml;View\UserControl1.xaml;View\UserControl2.xaml;
 
-True
+False
 

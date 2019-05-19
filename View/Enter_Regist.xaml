@@ -13,7 +13,7 @@
 
     <Grid>
         <Rectangle RadiusY="8" RadiusX="8" Fill="White"/>
-        <Image Source="D:\\Student_Assist\Resources\welcome.jpeg" Margin="310,0,0,0" Stretch="UniformToFill"/>
+        <Image Source="D:\учеба\4 sem\Student_Assist\Resources\welcome.jpeg" Margin="310,0,0,0" Stretch="UniformToFill"/>
         <Rectangle Margin="310,0,0,0">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -37,24 +37,26 @@
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#707070"><Run Text="это займет не больше 1 минуты."/></TextBlock>
             <StackPanel Margin="0,15" Orientation="Horizontal">
                 <materialDesign:PackIcon Kind="Account" VerticalAlignment="Center" Foreground="#707070"/>
-                <TextBox materialDesign:HintAssist.Hint="Login" Width="250" Margin="5"/>
+                <TextBox Name="UserLogin" materialDesign:HintAssist.Hint="Login" Width="250" Margin="5"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" >
                 <materialDesign:PackIcon Kind="Key" VerticalAlignment="Center" Foreground="#707070"/>
-                <PasswordBox materialDesign:HintAssist.Hint="Password" Width="250" Margin="5"/>
+                <PasswordBox Name="UserPass" materialDesign:HintAssist.Hint="Password" Width="250" Margin="5"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Name="Check_Pass" Visibility="Collapsed">
                 <materialDesign:PackIcon Kind="Key" VerticalAlignment="Center" Foreground="#707070"/>
-                <PasswordBox materialDesign:HintAssist.Hint="Password" Width="250" Margin="5"/>
+                <PasswordBox Name="UserPass2" materialDesign:HintAssist.Hint="Password" Width="250" Margin="5"/>
             </StackPanel>
             <Grid>
                 <CheckBox Name="RememberAcc" Content="Запомнить меня" Margin="5,10" Foreground="#707070"/>
                 <Button Name="HaveAccount"  Click="HaveAcc" Style="{StaticResource ButtonOpacity_0}" Content="У меня есть аккаунт" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10" Foreground="#707070" Visibility="Collapsed"/>
             </Grid>
             <StackPanel Orientation="Horizontal">
-                <Button Name="BLogin" HorizontalAlignment="Center" Content="LOGIN" FontFamily="Impact" FontSize="18" Height="32" Width="100" Background="#FF307CD6" BorderBrush="#FF307CD6" Margin="0,0,0,0"/>
-                <TextBlock Visibility="Collapsed" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#707070"><Run Text="Такой аккаунт существует " Foreground="#FFC81313"/></TextBlock>
-                <Button Name="BRegist"  HorizontalAlignment="Center" Content="Registration" FontFamily="Impact" FontSize="18" Height="32" Width="132" Background="#FF307CD6" BorderBrush="#FF307CD6" Margin="150,0,0,0" Visibility="Collapsed"/>
+                <Button Visibility="Visible" Click="Login" Name="BLogin" HorizontalAlignment="Center" Content="LOGIN" FontFamily="Impact" FontSize="18" Height="32" Width="100" Background="#FF307CD6" BorderBrush="#FF307CD6" Margin="0,0,0,0"/>
+                <TextBlock Name="DontTrue" Visibility="Collapsed" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#707070" Width="91"><Run Text="Неверный Login или Password " Foreground="#FFC81313"/></TextBlock>
+                <TextBlock Name="PassError" Visibility="Collapsed" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#707070" Width="66"><Run Text="Пароли не совпадают" Foreground="#FFC81313"/></TextBlock>
+                <TextBlock Name="HaveAc" Visibility="Collapsed" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#707070" Width="82"><Run Text="Такой аккаунт существует " Foreground="#FFC81313"/></TextBlock>
+                <Button Click="Regist" Name="BRegist"  HorizontalAlignment="Center" Content="Registration" FontFamily="Impact" FontSize="18" Height="32" Width="132" Background="#FF307CD6" BorderBrush="#FF307CD6" Margin="20,0,0,0" Visibility="Collapsed"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10,20">
                 <Label Content="Мы с соцсетях " Foreground="#707070" VerticalAlignment="Center"/>

@@ -22,11 +22,14 @@ namespace Student_Assist.View
         public Enter_Regist()
         {
             InitializeComponent();
+            if (ViewModel.UserAccess.CheckSaveAcc() != "")
+            {
+                MainMenu mainMenu = new MainMenu(ViewModel.UserAccess.CheckSaveAcc());
+                mainMenu.Show();
+                this.Close();
+            }
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-        DragMove();
-        }
+        private void Window_Loaded(object sender, RoutedEventArgs e) => DragMove();
         private void HaveAcc(object sender, RoutedEventArgs e)
         {
             BRegist.Visibility = Visibility.Collapsed;
@@ -41,26 +44,60 @@ namespace Student_Assist.View
             HaveAccount.Visibility = Visibility;
             BLogin.Visibility = Visibility.Collapsed;
         }
-        private void Quit(object sender, RoutedEventArgs e)
+        private void Login(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            if(ViewModel.UserAccess.CheckUser(UserLogin.Text, UserPass.Password) != "No" && ViewModel.UserAccess.CheckUser(UserLogin.Text, UserPass.Password) != null)
+            {
+                MainMenu mainMenu = new MainMenu(ViewModel.UserAccess.CheckUser(UserLogin.Text, UserPass.Password));
+                mainMenu.Show();
+                ViewModel.UserAccess.DelSaceAcc();
+                if (RememberAcc.IsChecked.Value)
+                {
+                    
+                    ViewModel.UserAccess.SaceAcc(UserLogin.Text, UserPass.Password);
+                }  
+                this.Close();
+            }
+            else
+            {
+                DontTrue.Visibility = Visibility;
+            }
         }
-        private void Minimize(object sender, RoutedEventArgs e)
+        private void Regist(object sender, RoutedEventArgs e)
         {
-            SystemCommands.MinimizeWindow(this);
+            DontTrue.Visibility = Visibility.Collapsed;
+            HaveAc.Visibility = Visibility.Collapsed;
+            PassError.Visibility = Visibility.Collapsed;
+            if (UserPass.Password != UserPass2.Password)
+            {
+                PassError.Visibility = Visibility;
+            }
+            else
+            {
+                if (UserLogin.Text.Length != 0 && UserPass.Password.Length != 0)
+                {
+                    if (ViewModel.UserAccess.Registration(UserLogin.Text, UserPass.Password) != "Error")
+                    {
+                        MainMenu mainMenu = new MainMenu(ViewModel.UserAccess.CheckUser(UserLogin.Text, UserPass.Password));
+                        ViewModel.UserAccess.DelSaceAcc();
+                        if (RememberAcc.IsChecked.Value)
+                        {
+                            ViewModel.UserAccess.SaceAcc(UserLogin.Text, UserPass.Password);
+                        }
+                        mainMenu.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        HaveAc.Visibility = Visibility;
+                    }
+                }
+            }
         }
-        private void Open_vk(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://vk.com/id170130092");
-        }
-        private void Open_linkedin(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.linkedin.com/in/sikoskyil/");
-        }
-        private void Open_telegram(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://t.me/nightyy256");
-        }
-        
+        private void Quit(object sender, RoutedEventArgs e) => this.Close();
+        private void Minimize(object sender, RoutedEventArgs e) => SystemCommands.MinimizeWindow(this);
+        private void Open_vk(object sender, RoutedEventArgs e) => System.Diagnostics.Process.Start("https://vk.com/id170130092"); 
+        private void Open_linkedin(object sender, RoutedEventArgs e) => System.Diagnostics.Process.Start("https://www.linkedin.com/in/sikoskyil/");
+        private void Open_telegram(object sender, RoutedEventArgs e) => System.Diagnostics.Process.Start("https://t.me/nightyy256");
     }
 }

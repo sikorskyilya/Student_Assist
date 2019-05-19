@@ -19,7 +19,7 @@ namespace Student_Assist.View
     /// </summary>
     public partial class MainMenu : Window
     {
-        public MainMenu()
+        public MainMenu(string UserID)
         {
             InitializeComponent();
         }
@@ -30,7 +30,8 @@ namespace Student_Assist.View
         }
         private void Progress_open(object sender, RoutedEventArgs e)
         {
-
+            lol.Children.Clear();
+            lol.Children.Add(new UserControl2());
         }
         private void Timetable_open(object sender, RoutedEventArgs e)
         {
