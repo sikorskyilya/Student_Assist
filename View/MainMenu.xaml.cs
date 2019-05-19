@@ -19,23 +19,27 @@ namespace Student_Assist.View
     /// </summary>
     public partial class MainMenu : Window
     {
-        public MainMenu(string UserID)
+        public string UserID;
+        public MainMenu(string _UserID)
         {
             InitializeComponent();
+            UserID = _UserID;
         }
 
         private void Notes_open(object sender, RoutedEventArgs e)
         {
-            lol.Children.Add(new UserControl1());
+            lol.Children.Clear();
+            lol.Children.Add(new UserControl2());
         }
         private void Progress_open(object sender, RoutedEventArgs e)
         {
             lol.Children.Clear();
-            lol.Children.Add(new UserControl2());
+            lol.Children.Add(new UserControl1());
         }
         private void Timetable_open(object sender, RoutedEventArgs e)
         {
-
+            lol.Children.Clear();
+            lol.Children.Add(new Rasp());
         }
         private void Help_open(object sender, RoutedEventArgs e)
         {
