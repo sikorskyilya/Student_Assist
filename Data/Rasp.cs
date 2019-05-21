@@ -18,6 +18,7 @@ namespace Student_Assist.Data
         public string Subject { get; set; }
         public string Type { get; set; }
         public string Teacher { get; set; }
+        public bool BODelivered { get; set; }
         public Rasp() { }
         public Rasp(string _day, string _time, string _place, string _subject, string _type, string _teacher)
         {

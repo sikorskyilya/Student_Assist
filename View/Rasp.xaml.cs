@@ -20,6 +20,7 @@ namespace Student_Assist.View
     /// </summary>
     public partial class Rasp : UserControl
     {
+        List<int> numbers = new List<int>();
         public Rasp()
         {
             InitializeComponent();
@@ -28,6 +29,22 @@ namespace Student_Assist.View
         private void Rasp_Loader(object sender, RoutedEventArgs e)
         {
             DataContext = new ViewModel.RaspView();
+        }
+        public void AddRasp(object sender, RoutedEventArgs e)
+        {
+            lol2.Children.Add(new AddRasp());
+        }
+        public void DeleteRasp(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        public void boolCBC_Checked(object sender, RoutedEventArgs e)
+        {
+            numbers.Add(data.SelectedIndex);
+        }
+        public void boolCBC_Unchecked(object sender, RoutedEventArgs e)
+        {
+            numbers.Remove(data.SelectedIndex);
         }
     }
 }

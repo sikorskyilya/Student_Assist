@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="Student_Assist.View.AddRasp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Student_Assist.View"
+             mc:Ignorable="d" 
+             Width="330" Height="405">
+    <Grid Background="Azure">
+        <Button Margin="0,10,-0.4,362.8" Width="329.9">1fdsfdsfdsfdsfdsfdsfdfdsfdsfdsfsdfsfsdfdshdss2</Button>
+    </Grid>
+</UserControl>

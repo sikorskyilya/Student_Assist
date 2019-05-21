@@ -86,20 +86,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data\Notes.cs" />
     <Compile Include="Data\Rasp.cs" />
     <Compile Include="Data\User.cs" />
     <Compile Include="ViewModel\RaspView.cs" />
+    <Compile Include="ViewModel\TextBookViewModel.cs" />
     <Compile Include="ViewModel\UserAccess.cs" />
+    <Compile Include="View\AddRasp.xaml.cs">
+      <DependentUpon>AddRasp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Rasp.xaml.cs">
       <DependentUpon>Rasp.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\UserControl2.xaml.cs">
-      <DependentUpon>UserControl2.xaml</DependentUpon>
+    <Compile Include="View\TextBook.xaml.cs">
+      <DependentUpon>TextBook.xaml</DependentUpon>
     </Compile>
     <Page Include="Resources\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddRasp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -137,7 +146,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\UserControl2.xaml">
+    <Page Include="View\TextBook.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

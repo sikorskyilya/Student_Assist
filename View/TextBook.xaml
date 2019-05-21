@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Student_Assist.View.TextBook"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Student_Assist.View"
+             mc:Ignorable="d"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" Height="588" Width="1139">
+    <Grid Height="588" Width="1139">
+        <GroupBox Header="Лабораторные работы №1" Style="{DynamicResource MaterialDesignGroupBox}" Margin="16,16,796,308" materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderThickness="0">
+            <RichTextBox Name="L1" FontFamily="Bell MT" FontSize="18" Foreground="#FF4A3FB0" Background="White" Margin="0,0,0,0" Width="292"/>
+        </GroupBox>
+        <GroupBox Header="Лабораторные работы №2" Style="{DynamicResource MaterialDesignGroupBox}"  materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderThickness="0" Margin="370,16,452,308">
+            <RichTextBox Name="L2" FontFamily="Bell MT" FontSize="18" Foreground="#FF4A3FB0" Background="White" Margin="0,0,0,0" Width="292"/>
+        </GroupBox>
+        <GroupBox Header="Лекции" Style="{DynamicResource MaterialDesignGroupBox}"  materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderThickness="0" Margin="727,16,99,308" >
+            <RichTextBox Name="LK" FontFamily="Bell MT" FontSize="18" Foreground="#FF4A3FB0" Background="White" Margin="0,0,0,0" Width="292"/>
+        </GroupBox>
+        <GroupBox Header="Практические занятия" Style="{DynamicResource MaterialDesignGroupBox}" Margin="16,280,796,44" materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderThickness="0">
+            <RichTextBox Name="PractZ"  FontFamily="Bell MT" FontSize="18" Foreground="#FF4A3FB0" Background="White" Margin="0,0,0,0" Width="292"/>
+        </GroupBox>
+        <GroupBox Header="Курсовой проект" Style="{DynamicResource MaterialDesignGroupBox}" Margin="370,280,452,44" materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderThickness="0">
+            <RichTextBox Name="CourcePr"  FontFamily="Bell MT" FontSize="18" Foreground="#FF4A3FB0" Background="White" Margin="0,0,0,0" Width="292"/>
+        </GroupBox>
+        <GroupBox Header="Запомнить" Style="{DynamicResource MaterialDesignGroupBox}" Margin="727,280,99,44" materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderThickness="0">
+            <RichTextBox Name="Import" FontFamily="Bell MT" FontSize="18" Foreground="#FF4A3FB0" Background="White" Margin="0,0,0,0" Width="292"/>
+        </GroupBox>
+        <Button Click="SaveAll" Style="{StaticResource MaterialDesignRaisedButton}"  ToolTip="SaveAll" Margin="1075,16,10,528" Height="Auto">
+            <materialDesign:PackIcon Kind="ContentSaveAll" Height="38" Width="26" />
+        </Button>
+    </Grid>
+</UserControl>

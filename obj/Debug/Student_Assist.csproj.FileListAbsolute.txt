@@ -69,7 +69,9 @@ D:\Student_Assist\obj\Debug\Student_Assist.csproj.CopyComplete
 D:\Student_Assist\obj\Debug\Student_Assist.exe
 D:\Student_Assist\bin\Debug\MaterialDesignColors.dll
 D:\Student_Assist\bin\Debug\MaterialDesignColors.pdb
-D:\учеба\4 sem\Student_Assist\obj\Debug\View\UserControl2.g.cs
-D:\учеба\4 sem\Student_Assist\obj\Debug\View\UserControl2.baml
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Rasp.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Rasp.baml
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\TextBook.g.cs
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\TextBook.baml
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\AddRasp.g.cs
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\AddRasp.baml

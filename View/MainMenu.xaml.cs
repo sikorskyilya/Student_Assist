@@ -28,10 +28,11 @@ namespace Student_Assist.View
 
         private void Notes_open(object sender, RoutedEventArgs e)
         {
+            
             lol.Children.Clear();
-            lol.Children.Add(new UserControl2());
+            lol.Children.Add(new TextBook(UserID));
         }
-        private void Progress_open(object sender, RoutedEventArgs e)
+        private void Progress_open(object sender, RoutedEventArgs e) 
         {
             lol.Children.Clear();
             lol.Children.Add(new UserControl1());

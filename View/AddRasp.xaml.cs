@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Student_Assist.View
 {
     /// <summary>
-    /// Логика взаимодействия для UserControl2.xaml
+    /// Логика взаимодействия для AddRasp.xaml
     /// </summary>
-    public partial class UserControl2 : UserControl
+    public partial class AddRasp : UserControl
     {
-        public UserControl2()
+        public AddRasp()
         {
             InitializeComponent();
         }
