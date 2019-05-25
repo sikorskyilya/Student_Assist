@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Student_Assist.View.AddRasp"
+﻿<UserControl x:Class="Student_Assist.View.DeleteRasp"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,7 +8,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              Width="330" Height="405">
     <Grid Background="White" Margin="0,0,-0.4,-12.2">
-        <GroupBox Header="Add datatable" Margin="10,10,9.6,9.8">
+        <GroupBox Header="Delete datatable" Margin="10,10,9.6,9.8">
             <ComboBox Name="Day" materialDesign:HintAssist.Hint="День" Margin="0,0,0,297.8" VerticalAlignment="Bottom" Height="35" Width="262">
                 <ComboBoxItem>
                     Понедельник
@@ -29,7 +29,7 @@
                     Суббота
                 </ComboBoxItem>
             </ComboBox>
-            
+
         </GroupBox>
         <ComboBox Name="Time" materialDesign:HintAssist.Hint="Время"  VerticalAlignment="Bottom" Height="35" Width="262" Margin="35,0,32.6,268.8">
             <ComboBoxItem>
@@ -77,9 +77,8 @@
             </ComboBoxItem>
         </ComboBox>
         <TextBox Name="Teacher" materialDesign:HintAssist.Hint="Преподаватель" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="35,278,33,102" />
-        <CheckBox Name="examen" Margin="35,320,33,69">Зкзамен</CheckBox>
-        <Button Margin="26,363,23.6,9.8" Click="AddR">
-            Добавить
+        <Button Margin="26,363,23.6,9.8" Click="DeleteR" >
+            Удалить
         </Button>
     </Grid>
 </UserControl>

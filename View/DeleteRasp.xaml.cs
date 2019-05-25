@@ -16,34 +16,25 @@ using System.Windows.Shapes;
 namespace Student_Assist.View
 {
     /// <summary>
-    /// Логика взаимодействия для AddRasp.xaml
+    /// Логика взаимодействия для DeleteRasp.xaml
     /// </summary>
-    public partial class AddRasp : UserControl
+    public partial class DeleteRasp : UserControl
     {
         string UserID;
-        public AddRasp(string _userId)
+        public DeleteRasp(string _userId)
         {
             InitializeComponent();
             UserID = _userId;
-
         }
-
-        private void AddR(object sender, RoutedEventArgs e)
+        private void DeleteR(object sender, RoutedEventArgs e)
         {
             if (Day.Text.ToString() == "" || Time.Text.ToString() == "" || Subject.Text.ToString() == "" || Place.Text.ToString() == "" || Type.Text.ToString() == "" || Teacher.Text.ToString() == "")
             {
                 MessageBox.Show("Вы должны заполнить все поля!");
             }
-            else {
-                string Answer;
-                Answer = ViewModel.RaspView.AddR(UserID, Day.Text.ToString(), Time.Text.ToString(), Subject.Text.ToString(), Place.Text.ToString(), Type.Text.ToString(), Teacher.Text.ToString(), examen.IsChecked.ToString());
-                if (Answer == "Ok")
-                {
-                }
-                else
-                {
-                    MessageBox.Show("Error!");
-                }
+            else
+            {
+               ViewModel.RaspView.DeleteR(UserID, Day.Text.ToString(), Time.Text.ToString(), Subject.Text.ToString(), Place.Text.ToString(), Type.Text.ToString(), Teacher.Text.ToString());
             }
         }
     }

@@ -29,11 +29,11 @@ namespace Student_Assist.Data
             this.Type = _type;
             this.Teacher = _teacher;
         }
-        public static Rasp[] GetDataRas()
+        public static Rasp[] GetDataRas(string _userid)
         {
             using (SQLiteConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                var output = connection.Query<Rasp>($"Select * from Rasp Where UserID = '2';").ToArray();
+                var output = connection.Query<Rasp>($"Select * from Rasp Where UserID = '{_userid}';").ToArray();
                 return output;
             }
         }

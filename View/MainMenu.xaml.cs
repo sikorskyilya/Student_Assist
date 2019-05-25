@@ -19,7 +19,7 @@ namespace Student_Assist.View
     /// </summary>
     public partial class MainMenu : Window
     {
-        public string UserID;
+        string UserID;
         public MainMenu(string _UserID)
         {
             InitializeComponent();
@@ -35,12 +35,13 @@ namespace Student_Assist.View
         private void Progress_open(object sender, RoutedEventArgs e) 
         {
             lol.Children.Clear();
-            lol.Children.Add(new UserControl1());
+
+            lol.Children.Add(new Progresss(UserID));
         }
         private void Timetable_open(object sender, RoutedEventArgs e)
         {
             lol.Children.Clear();
-            lol.Children.Add(new Rasp());
+            lol.Children.Add(new Rasp(UserID));
         }
         private void Help_open(object sender, RoutedEventArgs e)
         {
@@ -48,7 +49,10 @@ namespace Student_Assist.View
         }
         private void logout(object sender, RoutedEventArgs e)
         {
-
+            ViewModel.UserAccess.DelSaceAcc();      
+            Enter_Regist enter_Regist = new Enter_Regist();
+            enter_Regist.Show();
+            this.Close();
         }
         private void Left_Mouse(object sender, MouseButtonEventArgs e)
         {
@@ -62,6 +66,11 @@ namespace Student_Assist.View
         private void Minimize(object sender, RoutedEventArgs e)
         {
             SystemCommands.MinimizeWindow(this);
+        }
+
+        private void Home(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

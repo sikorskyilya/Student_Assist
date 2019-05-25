@@ -20,31 +20,34 @@ namespace Student_Assist.View
     /// </summary>
     public partial class Rasp : UserControl
     {
-        List<int> numbers = new List<int>();
-        public Rasp()
+        string UserID;
+        public Rasp(string _userID)
         {
+            UserID = _userID;
             InitializeComponent();
             Loaded += Rasp_Loader;
+            lol2.Children.Add(new AddRasp(UserID));
         }
+        public Rasp() { }
         private void Rasp_Loader(object sender, RoutedEventArgs e)
         {
-            DataContext = new ViewModel.RaspView();
+            DataContext = new ViewModel.RaspView(UserID);
         }
         public void AddRasp(object sender, RoutedEventArgs e)
         {
-            lol2.Children.Add(new AddRasp());
+            lol2.Children.Clear();
+            lol2.Children.Add(new AddRasp(UserID));
         }
         public void DeleteRasp(object sender, RoutedEventArgs e)
         {
-            
+            lol2.Children.Clear();
+            lol2.Children.Add(new DeleteRasp(UserID));
         }
-        public void boolCBC_Checked(object sender, RoutedEventArgs e)
+        public void RefresheRasp(object sender, RoutedEventArgs e)
         {
-            numbers.Add(data.SelectedIndex);
+            Rasp_Loader(sender, e);
         }
-        public void boolCBC_Unchecked(object sender, RoutedEventArgs e)
-        {
-            numbers.Remove(data.SelectedIndex);
-        }
+
+
     }
 }

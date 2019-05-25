@@ -7,7 +7,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#FF626262">
+    <Grid Background="#FF626262" Margin="0,0,0,-33.4">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition />
@@ -15,14 +15,17 @@
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Фильтр:" FontSize="16" FontFamily="Bell MT" Margin="5,8,5,5"/>
             <TextBox Text="{Binding FilterRasp, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="5"/>
-            <Button Click="AddRasp" Foreground="White" Background="#FF626262" Style="{StaticResource MaterialDesignRaisedButton}" Margin="420,2,0,1.2" Width="47">
+            <Button Click="AddRasp" Foreground="White" Background="#FF626262" Style="{StaticResource MaterialDesignRaisedButton}" Width="47" Margin="0,2,0,1.2">
                 <materialDesign:PackIcon Kind="Add" />
             </Button>
             <Button Click="DeleteRasp" Foreground="White" Background="#FF626262" Style="{StaticResource MaterialDesignRaisedButton}"  Width="47" Margin="5,2,0,1.2">
                 <materialDesign:PackIcon Kind="DeleteForever" />
             </Button>
+            <Button Click="RefresheRasp" Foreground="White" Background="#FF626262" Style="{StaticResource MaterialDesignRaisedButton}"  Width="47" Margin="5,2,0,1.2">
+                <materialDesign:PackIcon Kind="Refresh" />
+            </Button>
         </StackPanel>
-        <DataGrid Name="data" Grid.Row="1" Margin="5,4.8,266,4.6" ItemsSource="{Binding Items}" AutoGenerateColumns="False">
+        <DataGrid Name="data" Grid.Row="1" Margin="5,4.8,325,4.2" ItemsSource="{Binding Items}" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="День" Binding="{Binding Day}" />
                 <DataGridTextColumn Header="Время" Binding="{Binding Time}" />
@@ -32,6 +35,6 @@
                 <DataGridTextColumn Header="Преподаватель" Binding="{Binding Teacher}" />
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Name="lol2" Margin="690,4.8,-117,0" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Height="387" VerticalAlignment="Top"/>
+        <StackPanel Name="lol2" Margin="699,4.8,-126,0" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Height="433" VerticalAlignment="Top"/>
     </Grid>
 </UserControl>
