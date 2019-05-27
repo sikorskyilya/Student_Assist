@@ -41,10 +41,6 @@ namespace Student_Assist.View
             MainStack.Children.Clear();
             MainStack.Children.Add(new Rasp(UserID));
         }
-        private void Help_open(object sender, RoutedEventArgs e)
-        {
-
-        }
         private void logout(object sender, RoutedEventArgs e)
         {
             ViewModel.UserAccess.DelSaceAcc();      

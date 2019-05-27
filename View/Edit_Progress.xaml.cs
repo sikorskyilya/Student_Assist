@@ -19,7 +19,7 @@ namespace Student_Assist.View
     /// </summary>
     public partial class Edit_Progress : Window
     {
-        List<int> Pr_1SS = new List<int>(Enumerable.Range(0, 1000));
+        List<int> Pr_1SS = new List<int>(Enumerable.Range(1, 1000));
         string UserID;
         public Edit_Progress(string _userid)
         {
@@ -36,8 +36,9 @@ namespace Student_Assist.View
             {
                 MessageBox.Show("Все поля должны быть заполнены");
             }
-            else
-            {
+            else if (Int32.Parse(PR_SS.Text) > Int32.Parse(PR_VV.Text))
+                MessageBox.Show("Ошибочные данные ");
+            else {
                 ViewModel.Progress progress = new ViewModel.Progress();
                 string result = progress.EditPr(UserID, Int32.Parse(PR_SS.Text) * 100 / Int32.Parse(PR_VV.Text), OldName.Text, NewName.Text);
                 if (result == "NoSuch")

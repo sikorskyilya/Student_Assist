@@ -69,7 +69,7 @@ namespace Student_Assist.ViewModel
                 var output = connection.Query<string>($"Select * from UserInfo Where UserID = '{_userid}';");
                 if (output.Count() == 0)
                 {
-                    connection.Query<string>($"Insert into UserInfo(UserID, UserName, UserSurname) Value('{_userid}', '{name}', '{surname}');");
+                    connection.Query<string>($"Insert into UserInfo(UserID, UserName, UserSurname) Values('{_userid}', '{name}', '{surname}');");
                     return "ok";
                 }
                 else

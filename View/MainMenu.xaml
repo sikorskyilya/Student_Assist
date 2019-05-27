@@ -56,17 +56,20 @@
                 <materialDesign:PopupBox Foreground="White" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" Margin="10">
 
                     <StackPanel Width="150">
-                        <Button Content="Quit" Click="Quit"/>
-                        <Button Content="Minimize" Click="Minimize"/>
-                        <Button Content="Help" Click="Help_open"/>
-                        <Separator/>
                         <Button Content="Logout" Click="logout"/>
+                        <Separator/>                        
+                        <Button Content="Minimize" Click="Minimize"/>
+                        <Button Content="Quit" Click="Quit"/>
                     </StackPanel>
                 </materialDesign:PopupBox>
             </StackPanel>
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="30"  Width="261" Margin="0,6,0,0">Student Assistent</TextBlock>
         </Grid>
         <Grid  Name="MainStack" Margin="61,51,-0.4,0.4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1115*"/>
+                <ColumnDefinition Width="24*"/>
+            </Grid.ColumnDefinitions>
         </Grid>
     </Grid>
 

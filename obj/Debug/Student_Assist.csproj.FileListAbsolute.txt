@@ -69,10 +69,6 @@ D:\учеба\4 sem\Student_Assist\obj\Debug\View\Rasp.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Rasp.baml
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\TextBook.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\TextBook.baml
-D:\учеба\4 sem\Student_Assist\obj\Debug\View\AddRasp.g.cs
-D:\учеба\4 sem\Student_Assist\obj\Debug\View\AddRasp.baml
-D:\учеба\4 sem\Student_Assist\obj\Debug\View\DeleteRasp.g.cs
-D:\учеба\4 sem\Student_Assist\obj\Debug\View\DeleteRasp.baml
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Progresss.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Progresss.baml
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Add_Progress.g.cs

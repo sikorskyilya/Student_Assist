@@ -10,15 +10,15 @@
               Height="578" Width="1164.2">
     <ScrollViewer CanContentScroll="True" Height="651" >
         <Grid Height="578" Width="938">
-            <Button Background="#FF626262" Click="EditPR"  Height="Auto" Margin="943,59,-102,457">Edit</Button>
-            <Button Background="#FF626262" Click="AddPR" Margin="943,-10,-102,524" Height="Auto">Add</Button>
-            <Button Background="#FF626262" Click="DeletePR"  Height="Auto" Margin="943,126,-102,392">Delete</Button>
-            <Button ToolTip="Refresh" Background="#FF626262" Click="Refresh"  Height="Auto" Margin="943,191,-102,329">
+            <Button Background="#FF626262" Click="EditPR"  Height="Auto" Margin="928,59,-86,458">Edit</Button>
+            <Button Background="#FF626262" Click="AddPR" Margin="928,-10,-86,524" Height="Auto">Add</Button>
+            <Button Background="#FF626262" Click="DeletePR"  Height="Auto" Margin="928,126,-86,392">Delete</Button>
+            <Button ToolTip="Refresh" Background="#FF626262" Click="Refresh"  Height="Auto" Margin="928,191,-86,330">
                 <materialDesign:PackIcon Kind="Refresh" />
             </Button>
             <MetroChart:RadialGaugeChart ChartSubTitle="Прогресс в процентах"  
                                  ChartTitle="Прогресс по учебе" 
-                                 Background="White" Margin="-57,-10,0,10">
+                                 Background="White" Margin="-57,-10,15,10">
                 <MetroChart:RadialGaugeChart.Series>
                     <MetroChart:ChartSeries 
                 ItemsSource="{Binding Data}"

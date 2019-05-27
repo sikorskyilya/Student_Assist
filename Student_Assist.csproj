@@ -97,15 +97,7 @@
     <Compile Include="ViewModel\RaspView.cs" />
     <Compile Include="ViewModel\TextBookViewModel.cs" />
     <Compile Include="ViewModel\UserAccess.cs" />
-    <Compile Include="View\AddRasp.xaml.cs">
-      <DependentUpon>AddRasp.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Add_Progress.xaml.cs">
-      <DependentUpon>Add_Progress.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\DeleteRasp.xaml.cs">
-      <DependentUpon>DeleteRasp.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="View\Add_Progress.xaml.cs" />
     <Compile Include="View\Edit_Progress.xaml.cs">
       <DependentUpon>Edit_Progress.xaml</DependentUpon>
     </Compile>
@@ -128,17 +120,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\AddRasp.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\Add_Progress.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\DeleteRasp.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Edit_Progress.xaml">
       <SubType>Designer</SubType>
