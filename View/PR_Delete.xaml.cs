@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Student_Assist.View
 {
-    /// <summary>
-    /// Логика взаимодействия для PR_Delete.xaml
-    /// </summary>
     public partial class PR_Delete : Window
     {
         string UserID;

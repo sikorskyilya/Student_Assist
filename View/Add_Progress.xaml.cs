@@ -84,7 +84,7 @@ namespace Student_Assist.View
                         MessageBox.Show("Ошибочные данные в строке 1");
                     else
                     {
-                        result = progress.AddPr(UserID, (Int32.Parse(PR2_SS.Text) * 100) / Int32.Parse(PR2_VV.Text), name1.Text);
+                        result = progress.AddPr(UserID, (Int32.Parse(PR2_SS.Text) * 100) / Int32.Parse(PR2_VV.Text), name2.Text);
                         if (result == "Have")
                             MessageBox.Show("Такое поле есть!");
                         if (result == "Limit")
@@ -97,7 +97,7 @@ namespace Student_Assist.View
                         MessageBox.Show("Ошибочные данные в строке 1");
                     else
                     {
-                        result = progress.AddPr(UserID, (Int32.Parse(PR3_SS.Text) * 100) / Int32.Parse(PR3_VV.Text), name1.Text);
+                        result = progress.AddPr(UserID, (Int32.Parse(PR3_SS.Text) * 100) / Int32.Parse(PR3_VV.Text), name3.Text);
                         if (result == "Have")
                             MessageBox.Show("Такое поле есть!");
                         if (result == "Limit")
@@ -110,7 +110,7 @@ namespace Student_Assist.View
                         MessageBox.Show("Ошибочные данные в строке 1");
                     else
                     {
-                        result = progress.AddPr(UserID, (Int32.Parse(PR4_SS.Text) * 100) / Int32.Parse(PR4_VV.Text), name1.Text);
+                        result = progress.AddPr(UserID, (Int32.Parse(PR4_SS.Text) * 100) / Int32.Parse(PR4_VV.Text), name4.Text);
                         if (result == "Have")
                             MessageBox.Show("Такое поле есть!");
                         if (result == "Limit")
@@ -123,7 +123,7 @@ namespace Student_Assist.View
                         MessageBox.Show("Ошибочные данные в строке 1");
                     else
                     {
-                        result = progress.AddPr(UserID, (Int32.Parse(PR5_SS.Text) * 100) / Int32.Parse(PR5_VV.Text), name1.Text);
+                        result = progress.AddPr(UserID, (Int32.Parse(PR5_SS.Text) * 100) / Int32.Parse(PR5_VV.Text), name5.Text);
                         if (result == "Have")
                             MessageBox.Show("Такое поле есть!");
                         if (result == "Limit")
@@ -136,7 +136,7 @@ namespace Student_Assist.View
                         MessageBox.Show("Ошибочные данные в строке 1");
                     else
                     {
-                        result = progress.AddPr(UserID, (Int32.Parse(PR6_SS.Text) * 100) / Int32.Parse(PR6_VV.Text), name1.Text);
+                        result = progress.AddPr(UserID, (Int32.Parse(PR6_SS.Text) * 100) / Int32.Parse(PR6_VV.Text), name6.Text);
                         if (result == "Have")
                             MessageBox.Show("Такое поле есть!");
                         if (result == "Limit")

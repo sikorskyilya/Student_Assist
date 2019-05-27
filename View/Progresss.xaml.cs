@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Student_Assist.View
 {
-    /// <summary>
-    /// Логика взаимодействия для Progresss.xaml
-    /// </summary>
     public partial class Progresss : UserControl
     {
         public string UserID;

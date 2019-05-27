@@ -17,9 +17,6 @@ using System.Configuration;
 using Dapper;
 namespace Student_Assist.View
 {
-    /// <summary>
-    /// Логика взаимодействия для UserControl2.xaml
-    /// </summary>
     public partial class TextBook : UserControl
     {
         private const string DB_CONNECTION_NAME = "DefaultDB";

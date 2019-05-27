@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Student_Assist.View
 {
-    /// <summary>
-    /// Логика взаимодействия для Enter_Regist.xaml
-    /// </summary>
     public partial class Enter_Regist : Window
     {
         public Enter_Regist()

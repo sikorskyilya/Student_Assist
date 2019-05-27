@@ -39,7 +39,7 @@ namespace Student_Assist.ViewModel
                 {
                     return "Have";   
                 }
-                if (connection.Query<Data.Rasp>($"Select * from Progress Where Name = '{Name}';").Count() == 0 && connection.Query<Data.Rasp>($"Select * from Progress Where UserId = '{UserID}';").Count() <= 8)
+                if (connection.Query<Data.Rasp>($"Select * from Progress Where Name = '{Name}'AND UserId = '{UserID}' ;").Count() == 0 && connection.Query<Data.Rasp>($"Select * from Progress Where UserId = '{UserID}';").Count() <= 8)
                 {
                     connection.Query<Data.Rasp>($"Insert into Progress(UserID, Count, Name) Values ('{UserID}', '{Count}', '{Name}');");
                     return "Ok";

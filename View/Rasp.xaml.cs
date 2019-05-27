@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Student_Assist.View
 {
-    /// <summary>
-    /// Логика взаимодействия для Rasp.xaml
-    /// </summary>
     public partial class Rasp : UserControl
     {
         string UserID;

@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Student_Assist.View
 {
-    /// <summary>
-    /// Логика взаимодействия для Edit_Progress.xaml
-    /// </summary>
     public partial class Edit_Progress : Window
     {
         List<int> Pr_1SS = new List<int>(Enumerable.Range(1, 1000));
