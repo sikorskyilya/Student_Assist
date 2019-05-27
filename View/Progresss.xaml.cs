@@ -25,19 +25,36 @@ namespace Student_Assist.View
         {
             UserID = _userId;
             InitializeComponent();
-            ViewModel.Progress progress = new ViewModel.Progress(UserID);
-            DataContext = progress;
-            //Loaded += Prog_Loader;
+            Loaded += Prog_Loader;
         }
         public void Prog_Loader(object sender, RoutedEventArgs e)
         {
-            
+            ViewModel.Progress progress = new ViewModel.Progress(UserID);
+            DataContext = progress;
         }
         private void AddPR(object sender, RoutedEventArgs e)
         {
             Add_Progress add_Progress = new Add_Progress(UserID);
-            add_Progress.Show();
-            add_Progress.Topmost = true;
+            add_Progress.ShowDialog();
+            Prog_Loader(sender, e);
+        }
+        private void Refresh(object sender, RoutedEventArgs e)
+        {
+            Prog_Loader(sender, e);
+        }
+        private void EditPR(object sender, RoutedEventArgs e)
+        {
+            Edit_Progress edit_Progress = new Edit_Progress(UserID);
+            
+            edit_Progress.Topmost = true;
+            edit_Progress.ShowDialog();
+            Prog_Loader(sender, e);
+        }
+        private void DeletePR(object sender, RoutedEventArgs e)
+        {
+            PR_Delete pR_Delete = new PR_Delete(UserID);
+            pR_Delete.ShowDialog();
+            Prog_Loader(sender, e);
         }
     }
    

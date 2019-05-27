@@ -1,0 +1,23 @@
+﻿<Window x:Class="Student_Assist.View.PR_Delete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Assist.View" WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="PR_Delete" Height="232" Width="304.5" MouseLeftButtonDown="Left_Mouse" ResizeMode="NoResize" WindowStyle="None">
+    <Grid Background="#FF31577E" Margin="0,0,-0.2,0" Height="232" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Click="Quit" Style="{StaticResource ButtonOpacity_0}" HorizontalAlignment="Left" Margin="270,0,0,0" VerticalAlignment="Top" Width="35" Height="24">
+            <Button.Background>
+                <SolidColorBrush Color="Azure" Opacity="0.4" />
+            </Button.Background>
+            <materialDesign:PackIcon Kind="Close" />
+        </Button>
+        <TextBlock Margin="0,29,0,171" FontFamily="Bell MT" FontSize="19">Введите имя для удаления данных:</TextBlock>
+        <TextBox Name="NameDel" materialDesign:HintAssist.Hint="Имя для удаления" Margin="10,84,11,118"/>
+        <Button Click="Del" Name="Delete" Margin="74,163,78,37">Удалить</Button>
+    </Grid>
+</Window>

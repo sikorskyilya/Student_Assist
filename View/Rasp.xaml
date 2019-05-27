@@ -35,6 +35,153 @@
                 <DataGridTextColumn Header="Преподаватель" Binding="{Binding Teacher}" />
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Name="lol2" Margin="699,4.8,-126,0" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Height="433" VerticalAlignment="Top"/>
+        <Grid Visibility="Collapsed" Name="Add" Background="White" Margin="800,0,0,191.2" Grid.RowSpan="2">
+        <GroupBox Header="Add datatable" Margin="10,10,9.6,9.8">
+                <ComboBox Name="Day" materialDesign:HintAssist.Hint="День" Margin="0,0,0,297.8" VerticalAlignment="Bottom" Height="35" Width="262">
+                    <ComboBoxItem>
+                        Понедельник
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Вторник
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Среда
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Четверг
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Пятница
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Суббота
+                    </ComboBoxItem>
+                </ComboBox>
+            </GroupBox>
+        <ComboBox Name="Time" materialDesign:HintAssist.Hint="Время"  VerticalAlignment="Bottom" Height="35" Width="262" Margin="35,0,32.6,268.8">
+            <ComboBoxItem>
+                8.00-9.35
+            </ComboBoxItem>
+            <ComboBoxItem>
+                9.50-11.25
+            </ComboBoxItem>
+            <ComboBoxItem>
+                11.40-13.15
+            </ComboBoxItem>
+            <ComboBoxItem>
+                13.50-15.25
+            </ComboBoxItem>
+            <ComboBoxItem>
+                15.40-17.15
+            </ComboBoxItem>
+            <ComboBoxItem>
+                17.30-19.05
+            </ComboBoxItem>
+            <ComboBoxItem>
+                19.20-20.55
+            </ComboBoxItem>
+        </ComboBox>
+        <TextBox Name="Subject" materialDesign:HintAssist.Hint="Предмет" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="35,153,33,227" />
+        <TextBox Name="Place" materialDesign:HintAssist.Hint="Место" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="35,195,33,184" />
+        <ComboBox Name="Type" materialDesign:HintAssist.Hint="Тип Предмета"  VerticalAlignment="Bottom" Height="35" Width="262" Margin="35,0,33,144">
+            <ComboBoxItem>
+                Лекция
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Лабораторная
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Практическое занятие
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Консультация
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Защита
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Семинар
+            </ComboBoxItem>
+        </ComboBox>
+        <TextBox Name="Teacher" materialDesign:HintAssist.Hint="Преподаватель" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="35,278,33,102" />
+        <CheckBox Name="examen" Margin="35,320,33,69">Зкзамен</CheckBox>
+        <Button Margin="26,363,23.6,9.8" Click="AddR">
+            Добавить
+        </Button>
+    </Grid>
+        <Grid Name="Del" Background="White" Margin="800,0,0,191.2" Grid.RowSpan="2">
+            <GroupBox Header="Delete datatable" Margin="10,10,9.6,9.8">
+                <ComboBox Name="DayD" materialDesign:HintAssist.Hint="День" Margin="0,0,0,300.6" VerticalAlignment="Bottom" Height="35" Width="252">
+                    <ComboBoxItem>
+                        Понедельник
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Вторник
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Среда
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Четверг
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Пятница
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Суббота
+                    </ComboBoxItem>
+                </ComboBox>
+
+            </GroupBox>
+            <ComboBox Name="TimeD" materialDesign:HintAssist.Hint="Время"  VerticalAlignment="Bottom" Height="35" Width="262" Margin="35,0,32.6,268.8">
+                <ComboBoxItem>
+                    8.00-9.35
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    9.50-11.25
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    11.40-13.15
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    13.50-15.25
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    15.40-17.15
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    17.30-19.05
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    19.20-20.55
+                </ComboBoxItem>
+            </ComboBox>
+            <TextBox Name="SubjectD" materialDesign:HintAssist.Hint="Предмет" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="35,153,33,227" />
+            <TextBox Name="PlaceD" materialDesign:HintAssist.Hint="Место" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="35,195,33,184" />
+            <ComboBox Name="TypeD" materialDesign:HintAssist.Hint="Тип Предмета"  VerticalAlignment="Bottom" Height="35" Width="262" Margin="35,0,33,144">
+                <ComboBoxItem>
+                    Лекция
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Лабораторная
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Практическое занятие
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Консультация
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Защита
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Семинар
+                </ComboBoxItem>
+            </ComboBox>
+            <TextBox Name="TeacherD" materialDesign:HintAssist.Hint="Преподаватель" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="35,278,33,102" />
+            <Button Margin="26,363,23.6,9.8" Click="DeleteR" >
+                Удалить
+            </Button>
+        </Grid>
     </Grid>
 </UserControl>

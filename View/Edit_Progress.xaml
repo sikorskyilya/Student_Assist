@@ -1,0 +1,37 @@
+﻿<Window x:Class="Student_Assist.View.Edit_Progress"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Assist.View"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="Edit_Progress" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="307.2" Width="304.5" MouseLeftButtonDown="Left_Mouse" ResizeMode="NoResize" WindowStyle="None"> 
+    <Grid Background="#FF31577E" >
+        <Button Click="Quit" Style="{StaticResource ButtonOpacity_0}" HorizontalAlignment="Left" Margin="270,0,-0.2,0" VerticalAlignment="Top" Width="35" Height="24">
+            <Button.Background>
+                <SolidColorBrush Color="Azure" Opacity="0.4" />
+            </Button.Background>
+            <materialDesign:PackIcon Kind="Close" />
+        </Button>
+        <TextBlock Margin="10,22,-0.2,258.2">Введите имя поля:</TextBlock>
+        <TextBox Margin="10,49,9.8,236.2" Name="OldName"></TextBox>
+        <TextBlock Margin="10,76,-0.2,204.2">Введите значения на которые хотите заменить:</TextBlock>
+        <TextBox Name="NewName" materialDesign:HintAssist.Hint="Новое имя" Margin="10,103,9.8,178.2"/>
+        <ComboBox  Foreground="White" Name="PR_SS" materialDesign:HintAssist.Hint="Сдано" MinWidth="72"  Style="{StaticResource MaterialDesignFloatingHintComboBox}" Height="45" RenderTransformOrigin="0.5,0.5" Margin="10,134,222.8,128.2">
+            <ComboBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel />
+                </ItemsPanelTemplate>
+            </ComboBox.ItemsPanel>
+        </ComboBox>
+        <ComboBox Foreground="White" Name="PR_VV" materialDesign:HintAssist.Hint="Всего" MinWidth="72" Margin="158,134,74.8,128.2"  Style="{StaticResource MaterialDesignFloatingHintComboBox}" Height="45">
+            <ComboBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel />
+                </ItemsPanelTemplate>
+            </ComboBox.ItemsPanel>
+        </ComboBox>
+        <Button Margin="84,184,91.8,91.2" Click="Change" >Изменить</Button>
+    </Grid>
+</Window>

@@ -21,6 +21,7 @@ namespace Student_Assist.View
     {
         public Enter_Regist()
         {
+
             InitializeComponent();
             if (ViewModel.UserAccess.CheckSaveAcc() != "")
             {

@@ -86,10 +86,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data\Home.cs" />
+    <Compile Include="Data\HomeDiagramm.cs" />
     <Compile Include="Data\Progr.cs" />
     <Compile Include="Data\Notes.cs" />
     <Compile Include="Data\Rasp.cs" />
     <Compile Include="Data\User.cs" />
+    <Compile Include="ViewModel\HomeView.cs" />
     <Compile Include="ViewModel\ProgressView.cs" />
     <Compile Include="ViewModel\RaspView.cs" />
     <Compile Include="ViewModel\TextBookViewModel.cs" />
@@ -103,8 +106,17 @@
     <Compile Include="View\DeleteRasp.xaml.cs">
       <DependentUpon>DeleteRasp.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Edit_Progress.xaml.cs">
+      <DependentUpon>Edit_Progress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Progresss.xaml.cs">
       <DependentUpon>Progresss.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR_Delete.xaml.cs">
+      <DependentUpon>PR_Delete.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Rasp.xaml.cs">
       <DependentUpon>Rasp.xaml</DependentUpon>
@@ -128,17 +140,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Edit_Progress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Enter_Regist.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -150,11 +166,11 @@
     <Compile Include="View\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Page Include="View\Progresss.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PR_Delete.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

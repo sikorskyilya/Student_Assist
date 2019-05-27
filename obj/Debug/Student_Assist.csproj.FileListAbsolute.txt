@@ -1,5 +1,4 @@
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Enter_Regist.g.cs
-D:\учеба\4 sem\Student_Assist\obj\Debug\View\MainWindow.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\App.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist_MarkupCompile.cache
 D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist_MarkupCompile.lref
@@ -24,7 +23,6 @@ D:\учеба\4 sem\Student_Assist\bin\Debug\System.Data.SQLite.dll.config
 D:\учеба\4 sem\Student_Assist\obj\Debug\App.baml
 D:\учеба\4 sem\Student_Assist\obj\Debug\Resources\Styles.baml
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Enter_Regist.baml
-D:\учеба\4 sem\Student_Assist\obj\Debug\View\MainWindow.baml
 D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.g.resources
 D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.Properties.Resources.resources
 D:\учеба\4 sem\Student_Assist\obj\Debug\Student_Assist.csproj.GenerateResource.cache
@@ -79,3 +77,9 @@ D:\учеба\4 sem\Student_Assist\obj\Debug\View\Progresss.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Progresss.baml
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Add_Progress.g.cs
 D:\учеба\4 sem\Student_Assist\obj\Debug\View\Add_Progress.baml
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\Home.g.cs
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\Home.baml
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\Edit_Progress.g.cs
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\Edit_Progress.baml
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\PR_Delete.g.cs
+D:\учеба\4 sem\Student_Assist\obj\Debug\View\PR_Delete.baml

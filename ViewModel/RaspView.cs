@@ -34,7 +34,7 @@ namespace Student_Assist.ViewModel
         {
             using (SQLiteConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Query<Rasp>($"Delete from Rasp Where UserID = '{_userId}' And Day = '{_day}' And Time = '{_time}' And Subject = '{_subject}' And Place = '{_place}' And Type = '{_type}' And Teacher = '{_teacher}';").ToArray();
+                connection.Query<Rasp>($"Delete from Rasp Where UserID = '{_userId}' And Day = '{_day}' And Time = '{_time}' And Subject = '{_subject}' And Place = '{_place}' And Type = '{_type}' And Teacher = '{_teacher}';");
             }
         }
         public string FilterRasp

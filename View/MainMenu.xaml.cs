@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Student_Assist.View
 {
-    /// <summary>
-    /// Логика взаимодействия для MainMenu.xaml
-    /// </summary>
     public partial class MainMenu : Window
     {
         string UserID;
@@ -24,24 +21,25 @@ namespace Student_Assist.View
         {
             InitializeComponent();
             UserID = _UserID;
+            ViewModel.Progress progress = new ViewModel.Progress(UserID);
+            DataContext = progress;
+            MainStack.Children.Add(new Home(UserID));
         }
 
         private void Notes_open(object sender, RoutedEventArgs e)
         {
-            
-            lol.Children.Clear();
-            lol.Children.Add(new TextBook(UserID));
+            MainStack.Children.Clear();
+            MainStack.Children.Add(new TextBook(UserID));
         }
         private void Progress_open(object sender, RoutedEventArgs e) 
         {
-            lol.Children.Clear();
-
-            lol.Children.Add(new Progresss(UserID));
+            MainStack.Children.Clear();
+            MainStack.Children.Add(new Progresss(UserID));
         }
         private void Timetable_open(object sender, RoutedEventArgs e)
         {
-            lol.Children.Clear();
-            lol.Children.Add(new Rasp(UserID));
+            MainStack.Children.Clear();
+            MainStack.Children.Add(new Rasp(UserID));
         }
         private void Help_open(object sender, RoutedEventArgs e)
         {
@@ -58,18 +56,18 @@ namespace Student_Assist.View
         {
             DragMove();
         }
-
         private void Quit(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
         private void Minimize(object sender, RoutedEventArgs e)
         {
             SystemCommands.MinimizeWindow(this);
         }
-
         private void Home(object sender, RoutedEventArgs e)
         {
+            MainStack.Children.Clear();
+            MainStack.Children.Add(new Home(UserID));
 
         }
     }

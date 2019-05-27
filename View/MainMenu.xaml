@@ -66,9 +66,8 @@
             </StackPanel>
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="30"  Width="261" Margin="0,6,0,0">Student Assistent</TextBlock>
         </Grid>
-        <StackPanel Name="lol" Margin="61,51,-0.4,0.4">
-            
-        </StackPanel>
+        <Grid  Name="MainStack" Margin="61,51,-0.4,0.4">
+        </Grid>
     </Grid>
 
 </Window>
